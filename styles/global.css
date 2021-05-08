@@ -1,0 +1,101 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --speech-color: #F9FAFB;
+}
+
+#__next, body, html {
+    height: 100%;
+    background-color: #111827;
+}
+
+body * {
+    transition: 0.05s all ease-in-out;
+}
+
+#sleeping .sleeping-bubble{
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+}
+.sleeping-bubble{
+    width: 100%;
+    height:100%;
+    background: var(--speech-color);
+    border-radius: 50%;
+    line-height: inherit;    
+    text-align: center;
+    position: relative;
+}
+.sleeping-bubble::before,
+.sleeping-bubble::after{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    display: block;
+    content: '';
+    position: absolute;
+    top:0;
+}
+.sleeping-bubble::before{
+    background: var(--speech-color);
+    -webkit-transform: skew(4deg);
+    z-index: -1;
+}
+.sleeping-bubble::after{
+    background: var(--speech-color);
+    -webkit-transform: skew(-3deg);
+    z-index: -2;
+}
+.sleeping-bubble > div{
+    color: #4B5563;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: inherit;
+    font-size: 10pt;
+    display:inline-block;
+}
+.sleeping-bubble > div.char1{
+    -webkit-transform: rotate(-10deg);
+}
+.sleeping-bubble > div.char3{
+    -webkit-transform: rotate(10deg);
+}
+.sleeping-bubble > div.char2{
+    font-size: 20pt;
+}
+.sleeping-bubble .triangle{
+  width: 0px;
+	height: 0px;
+	border-top: 7px solid transparent;
+	border-bottom: 18px solid transparent;
+	border-left: 30px solid var(--speech-color);
+	position: absolute;
+	top: 36px;
+	left: 15px;
+	z-index: -3;
+	-webkit-transform: rotate(9deg);
+}
+@-webkit-keyframes sleeping {
+  0%   { -webkit-transform: scale(1,1); }
+  50%   { -webkit-transform: scale(0.9,0.9); }
+  100%   { -webkit-transform: scale(1,1); }
+}
+#sleeping{
+	float: left;
+	-webkit-animation: sleeping 3s linear infinite;
+	-webkit-transform-origin: 10% 100%;
+	top: 10px;
+	cursor: default;
+}
+
+.faq-answer p:not(:first-child){
+    padding-top: 1rem;
+}
+
+.grecaptcha-badge { 
+    visibility: hidden; 
+}
