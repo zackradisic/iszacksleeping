@@ -1,5 +1,6 @@
 import DateTicker from '@components/DateTicker'
 import FAQ from '@components/FAQ'
+import Footer from '@components/Footer'
 import Modal from '@components/Modal'
 import SleepyZs from '@components/SleepyZs'
 import Stats from '@components/Stats'
@@ -180,6 +181,7 @@ const IndexPage = () => {
         </div>
         {open ? <Modal state={zackState} open={open} setOpen={setOpen} /> : ''}
       </div>
+      <Footer />
     </GoogleReCaptchaProvider>
   )
 }
