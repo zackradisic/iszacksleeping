@@ -18,7 +18,7 @@ const Footer = () => {
           <p className="text-center text-base text-gray-400">
             View this site&apos;s source code on{' '}
             <a
-              href="https://github.com/zackradisic/iszacksleeping.com"
+              href="https://github.com/zackradisic/iszacksleeping"
               className="text-teal-400 hover:text-teal-500">
               GitHub
             </a>
