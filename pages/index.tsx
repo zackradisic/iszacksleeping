@@ -81,8 +81,8 @@ const IndexPage = () => {
                     )}
                     <img
                       className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 shadow-md"
-                      src="https://pbs.twimg.com/profile_images/1380983377910710275/1yPorrIE_400x400.jpg"
-                      alt=""
+                      src="/zack.jpeg"
+                      alt="Zack"
                     />
                   </div>
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
