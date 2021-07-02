@@ -19,7 +19,7 @@
     "@headlessui/react": "^1.0.0",
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/forms": "^0.3.2",
-    "autoprefixer": "^10.2.4",
+    "autoprefixer": "^10.2.6",
     "axios": "^0.21.1",
     "date-fns": "^2.21.1",
     "date-fns-tz": "^1.1.4",
@@ -30,10 +30,9 @@
     "react-google-recaptcha-v3": "^1.9.3",
     "react-hook-form": "^7.2.3",
     "react-hot-toast": "^1.0.2",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/jit": "^0.1.18",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
@@ -41,6 +40,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-config-prettier-standard": "^3.0.1",
     "eslint-config-react-app": "^6.0.0",
