@@ -7,13 +7,22 @@ import Stats from '@components/Stats'
 import axios from 'axios'
 import { format, formatDistance } from 'date-fns'
 import { zonedTimeToUtc } from 'date-fns-tz'
+import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import React, { useEffect, useState } from 'react'
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { Toaster } from 'react-hot-toast'
 import useSWR from 'swr'
 import { ZackState } from 'typings/ZackState'
 
-const IndexPage = () => {
+export const getServerSideProps: GetServerSideProps = async ctx => ({
+  props: {
+    spam: ctx.query.spam !== undefined
+  }
+})
+
+const IndexPage = ({
+  spam
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { data, error } = useSWR<ZackState, number>(
     '/api/is',
     async (url: string) => {
@@ -25,7 +34,7 @@ const IndexPage = () => {
       }
     }
   )
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(spam)
   const [zackState, setZackState] = useState<ZackState | undefined>()
 
   useEffect(() => {
