@@ -73,7 +73,7 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
                   <input
                     {...register('email', {
                       required: true,
-                      pattern: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+                      pattern: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/
                     })}
                     type="email"
                     autoComplete="email"
