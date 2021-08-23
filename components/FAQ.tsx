@@ -14,7 +14,8 @@ const faqs = [
           button above to notify me and a Slack bot will{' '}
           <a
             href="https://www.youtube.com/watch?v=AxhNTy3D4kU"
-            className="text-teal-400 hover:text-teal-500">
+            className="text-teal-400 hover:text-teal-500"
+          >
             spam
           </a>{' '}
           my phone with notifications until I respond.
@@ -32,7 +33,8 @@ const faqs = [
           co-founder{' '}
           <a
             href="https://twitter.com/CryogenicPlanet"
-            className="text-teal-400 hover:text-teal-500">
+            className="text-teal-400 hover:text-teal-500"
+          >
             @CryogenicPlanet
           </a>{' '}
           who is based in India and has an equally discombobulating sleep
@@ -54,8 +56,9 @@ const FAQ = () => {
             <p className="mt-4 text-lg text-gray-400">
               You can also ask me questions on{' '}
               <a
-                href="https://twitter.com/zackinsomnia"
-                className="font-medium text-teal-500 hover:text-teal-400">
+                href="https://twitter.com/zack_overflow"
+                className="font-medium text-teal-500 hover:text-teal-400"
+              >
                 Twitter
               </a>
               .

@@ -40,7 +40,8 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-8 divide-y divide-gray-200">
+      className="space-y-8 divide-y divide-gray-200"
+    >
       <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
         <div>
           <div>
@@ -53,7 +54,8 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
               This will{' '}
               <a
                 href="https://www.youtube.com/watch?v=AxhNTy3D4kU"
-                className="text-teal-500 hover:text-teal-400">
+                className="text-teal-500 hover:text-teal-400"
+              >
                 spam
               </a>{' '}
               me with a huge burst of notifications delivered in about ~30
@@ -65,7 +67,8 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
             <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+                className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+              >
                 E-mail
               </label>
               <div className="mt-1 sm:mt-0 sm:col-span-2">
@@ -73,7 +76,7 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
                   <input
                     {...register('email', {
                       required: true,
-                      pattern: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+                      pattern: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/
                     })}
                     type="email"
                     autoComplete="email"
@@ -86,7 +89,8 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
             <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+                className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+              >
                 Message
               </label>
               <div className="mt-1 sm:mt-0 sm:col-span-2">
@@ -104,13 +108,15 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
                   This site is protected by reCAPTCHA and the Google{' '}
                   <a
                     className="text-teal-500 hover:text-teal-600"
-                    href="https://policies.google.com/privacy">
+                    href="https://policies.google.com/privacy"
+                  >
                     Privacy Policy
                   </a>{' '}
                   and{' '}
                   <a
                     className="text-teal-500 hover:text-teal-600"
-                    href="https://policies.google.com/terms">
+                    href="https://policies.google.com/terms"
+                  >
                     Terms of Service
                   </a>{' '}
                   apply.
@@ -125,7 +131,8 @@ const Form: React.FC<Props> = ({ state, setOpen }) => {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+          >
             Seal my fate
           </button>
         </div>

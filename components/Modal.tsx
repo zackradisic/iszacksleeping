@@ -22,7 +22,8 @@ const Modal: React.FC<Props> = ({ open, setOpen, state }) => {
           enterTo="opacity-100"
           leave="transition duration-200 ease-in"
           leaveFrom="opacity-100"
-          leaveTo="opacity-0 ">
+          leaveTo="opacity-0 "
+        >
           <div className="fixed inset-0 transition-opacity" aria-hidden="true">
             <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
           </div>
@@ -35,12 +36,14 @@ const Modal: React.FC<Props> = ({ open, setOpen, state }) => {
           enterTo="opacity-100 translate-y-0 sm:scale-100 "
           leave="transition duration-200 ease-in"
           leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-          leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+          leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        >
           <div
             className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6"
             role="dialog"
             aria-modal="true"
-            aria-labelledby="modal-headline">
+            aria-labelledby="modal-headline"
+          >
             <div>
               <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
                 <svg
@@ -49,7 +52,8 @@ const Modal: React.FC<Props> = ({ open, setOpen, state }) => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true">
+                  aria-hidden="true"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -72,7 +76,8 @@ const Modal: React.FC<Props> = ({ open, setOpen, state }) => {
               <button
                 onClick={() => setOpen(false)}
                 type="button"
-                className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-900 text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm">
+                className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-900 text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+              >
                 Go back
               </button>
             </div>

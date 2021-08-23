@@ -8,9 +8,10 @@ const Footer = () => {
           <p className="text-center text-base text-gray-400">
             Made with ❤️ by{' '}
             <a
-              href="https://twitter.com/zackinsomnia"
-              className="text-teal-400 hover:text-teal-500">
-              @zackinsomnia
+              href="https://twitter.com/zack_overflow"
+              className="text-teal-400 hover:text-teal-500"
+            >
+              @zack_overflow
             </a>
           </p>
         </div>
@@ -19,7 +20,8 @@ const Footer = () => {
             View this site&apos;s source code on{' '}
             <a
               href="https://github.com/zackradisic/iszacksleeping"
-              className="text-teal-400 hover:text-teal-500">
+              className="text-teal-400 hover:text-teal-500"
+            >
               GitHub
             </a>
           </p>

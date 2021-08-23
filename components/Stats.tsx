@@ -46,7 +46,8 @@ const Stats: React.FC<Props> = ({ stats, title, timeRange }) => {
                     ? 'bg-green-100 text-green-800'
                     : 'bg-red-100 text-red-800',
                   'inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium md:mt-2 lg:mt-0'
-                )}>
+                )}
+              >
                 {!item.changeType ? (
                   ''
                 ) : item.changeType === 'increase' ? (
